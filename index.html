@@ -4,19 +4,18 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <meta name="theme-color" content="#1a1a1a">
-<title>Sourav — 1,500 kcal Diet Plan</title>
+<title>Sourav — Diet Plan by Surabhi</title>
 <style>
 :root {
-  --serif: 'Georgia', 'Times New Roman', serif;
-  --sans: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
-  --ink: #1a1a1a; --ink-mid: #444; --ink-soft: #888;
-  --paper: #faf8f4; --warm: #f2ede4;
-  --accent: #c0392b; --accent-soft: #fdf0ee;
-  --teal: #1a6b5a; --teal-soft: #e6f4f1;
-  --amber-soft: #fdf4e3; --amber: #c17f24;
-  --border: #e2dcd3;
-  --info: #1d56c4; --info-soft: #eef3fd;
-  --nav: 60px;
+  --serif: 'Georgia','Times New Roman',serif;
+  --sans: -apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif;
+  --ink:#1a1a1a;--ink-mid:#444;--ink-soft:#888;
+  --paper:#faf8f4;--warm:#f2ede4;
+  --accent:#c0392b;--accent-soft:#fdf0ee;
+  --teal:#1a6b5a;--teal-soft:#e6f4f1;
+  --amber-soft:#fdf4e3;--amber:#c17f24;
+  --border:#e2dcd3;--info:#1d56c4;--info-soft:#eef3fd;
+  --nav:60px;
 }
 *{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent}
 html{scroll-behavior:smooth;background:var(--paper)}
@@ -83,29 +82,6 @@ body{font-family:var(--sans);color:var(--ink);font-size:15px;line-height:1.7;pad
 .trv{font-size:14px;font-weight:600;color:var(--ink);margin-bottom:3px}
 .trd{font-size:12.5px;color:var(--ink-mid);line-height:1.6}
 
-.snk{background:var(--warm);border:1px solid var(--border);border-radius:12px;padding:13px 14px;margin-bottom:10px}
-.snkn{font-weight:600;font-size:14px;color:var(--ink);margin-bottom:5px}
-.snkb{font-size:13px;color:var(--ink-mid);line-height:1.7;margin-bottom:5px}
-.snkm{font-size:11px;color:var(--ink-soft)}
-
-.sfr{border-bottom:1px solid var(--border);padding:13px 15px}
-.sfr:last-child{border-bottom:none}
-.sfl{font-size:10px;font-weight:600;text-transform:uppercase;letter-spacing:0.04em;color:var(--ink-soft);margin-bottom:5px}
-.sfv{font-size:13px;color:var(--ink-mid);line-height:1.7}
-
-.div{height:1px;background:var(--border);margin:22px 0}
-.slbl{font-size:10px;letter-spacing:0.18em;text-transform:uppercase;color:var(--accent);margin-bottom:7px}
-.stit{font-family:var(--serif);font-size:22px;font-weight:400;line-height:1.2;margin-bottom:13px}
-
-.foot{background:var(--ink);color:rgba(255,255,255,0.38);padding:26px 20px;font-size:12px;line-height:1.7;margin-top:6px}
-.footn{font-family:var(--serif);font-size:20px;font-style:italic;color:rgba(255,255,255,0.6);margin-bottom:6px}
-
-.cnote{padding:20px 18px;font-size:15px;color:var(--ink-mid);line-height:1.85}
-.cnote p{margin-bottom:15px}
-.cnote p:last-child{margin-bottom:0}
-.csig{font-family:var(--serif);font-size:20px;font-style:italic;color:var(--ink);padding:4px 18px 22px}
-
-/* MACRO BAR */
 .macro-bar{margin:14px 0 6px}
 .macro-bar-label{display:flex;justify-content:space-between;font-size:11px;color:var(--ink-soft);margin-bottom:5px}
 .macro-bar-track{height:6px;background:var(--border);border-radius:10px;overflow:hidden;display:flex;gap:2px}
@@ -116,12 +92,17 @@ body{font-family:var(--sans);color:var(--ink);font-size:15px;line-height:1.7;pad
 .ml-item{display:flex;align-items:center;gap:5px;font-size:10px;color:var(--ink-soft)}
 .ml-dot{width:8px;height:8px;border-radius:50%;flex-shrink:0}
 
-/* TRAINING DAY vs REST DAY toggle */
 .day-toggle-wrap{display:flex;gap:0;border:1px solid var(--border);border-radius:10px;overflow:hidden;margin-bottom:14px}
 .day-toggle-btn{flex:1;padding:10px;text-align:center;font-size:12px;font-weight:500;cursor:pointer;background:var(--paper);color:var(--ink-soft);border:none;font-family:var(--sans);transition:all 0.2s}
 .day-toggle-btn.active{background:var(--ink);color:#fff}
 .diet-variant{display:none}
 .diet-variant.active{display:block}
+
+.foot{background:var(--ink);color:rgba(255,255,255,0.38);padding:26px 20px;font-size:12px;line-height:1.7;margin-top:6px}
+.footn{font-family:var(--serif);font-size:20px;font-style:italic;color:rgba(255,255,255,0.6);margin-bottom:6px}
+
+.fruit-row{display:flex;flex-wrap:wrap;gap:8px;margin:10px 0 4px}
+.fruit-chip{font-size:12px;padding:5px 12px;border-radius:20px;background:var(--teal-soft);color:#0d3d30;border:1px solid rgba(26,107,90,0.2)}
 </style>
 </head>
 <body>
@@ -130,56 +111,54 @@ body{font-family:var(--sans);color:var(--ink);font-size:15px;line-height:1.7;pad
 <div id="cover">
   <div class="cover-eyebrow">Fat Loss Diet Plan — Phase 1</div>
   <div class="cover-name">Sourav<br><em>Das</em></div>
-  <div class="cover-sub">A 1,500 calorie fat loss plan built to protect your muscle while you cut — designed for someone who trains hard.</div>
+  <div class="cover-sub">1,500 kcal avg · 120g protein · built to lose fat without losing muscle.</div>
   <div class="cover-pills">
     <span class="cpill">Fat Loss</span>
-    <span class="cpill">1,500 kcal</span>
-    <span class="cpill">140g Protein</span>
+    <span class="cpill">~1,519 kcal avg</span>
+    <span class="cpill">120g Protein</span>
     <span class="cpill">Non-Veg</span>
   </div>
   <div class="cover-coach">Surabhi</div>
   <div class="cover-role">Certified Fitness &amp; Nutrition Coach · April 2026</div>
 </div>
 
+<!-- OVERVIEW -->
+<span class="sec-anchor" id="overview"></span>
+<div class="ph"><div class="ph-eye">Your numbers</div><div class="ph-title">How this plan<br>is structured.</div></div>
 <div class="cx">
-  <!-- NUMBERS -->
-  <span class="sec-anchor" id="overview"></span>
-  <div class="slbl">Your numbers</div>
-  <div class="stit">Why 1,500 calories<br>and how it works.</div>
-
-  <div class="card">
-    <div class="tr"><div class="trm">Your estimated TDEE</div><div class="trv">~2,100 kcal/day</div><div class="trd">78kg × 1.55 activity multiplier (strength training 4–5 days + moderate daily steps). This is roughly what you burn on a typical day.</div></div>
-    <div class="tr"><div class="trm">Your deficit</div><div class="trv" style="color:var(--accent)">~600 kcal/day</div><div class="trd">This puts you on track to lose approximately 0.5–0.6 kg per week — a sustainable rate that protects muscle mass. Going faster risks muscle loss and hormonal stress.</div></div>
-    <div class="tr"><div class="trm">Why protein is so high</div><div class="trv" style="color:var(--teal)">140g protein (1.8g/kg)</div><div class="trd">On a calorie deficit, your body looks for energy from anywhere — including muscle. High protein prevents this. It also keeps you fuller for longer, which makes the deficit easier to maintain.</div></div>
-    <div class="tr"><div class="trm">Carb strategy</div><div class="trv">Cycling by day type</div><div class="trd">Training days get more carbs (~130g) to fuel performance. Rest days get fewer carbs (~90g) since you don't need the glycogen. Total calories remain 1,500 either way.</div></div>
-  </div>
 
   <div class="stats">
-    <div class="st"><div class="stl">Daily calories</div><div class="stv">1,500</div><div class="stu">~600 kcal deficit</div></div>
-    <div class="st"><div class="stl">Protein</div><div class="stv">140g</div><div class="stu">muscle preservation</div></div>
-    <div class="st"><div class="stl">Carbs — train day</div><div class="stv">~130g</div><div class="stu">fuel for sessions</div></div>
-    <div class="st"><div class="stl">Carbs — rest day</div><div class="stv">~90g</div><div class="stu">lower on off days</div></div>
-    <div class="st"><div class="stl">Fats</div><div class="stv">~50g</div><div class="stu">hormones + satiety</div></div>
-    <div class="st"><div class="stl">Water</div><div class="stv">3L+</div><div class="stu">minimum daily</div></div>
+    <div class="st"><div class="stl">Weekly avg calories</div><div class="stv">1,519</div><div class="stu">per day</div></div>
+    <div class="st"><div class="stl">Protein target</div><div class="stv">120g</div><div class="stu">daily — both days</div></div>
+    <div class="st"><div class="stl">Training days</div><div class="stv">~1,570</div><div class="stu">4 days/week</div></div>
+    <div class="st"><div class="stl">Rest days</div><div class="stv">~1,450</div><div class="stu">3 days/week</div></div>
+    <div class="st"><div class="stl">Avg daily deficit</div><div class="stv">~581</div><div class="stu">vs ~2,100 TDEE</div></div>
+    <div class="st"><div class="stl">Expected loss</div><div class="stv">~0.5kg</div><div class="stu">per week</div></div>
   </div>
 
-  <!-- MACRO BAR -->
+  <div class="card">
+    <div class="tr"><div class="trm">TDEE estimate</div><div class="trv">~2,100 kcal/day</div><div class="trd">78kg × 1.55 activity multiplier (strength training 4–5 days + 6–8k daily steps).</div></div>
+    <div class="tr"><div class="trm">Why two calorie levels</div><div class="trv">Training vs rest day split</div><div class="trd">More calories on training days fuels performance and recovery. Fewer on rest days deepens the deficit when the body needs fuel least. Weekly average stays at ~1,519 kcal.</div></div>
+    <div class="tr"><div class="trm">Weekly calorie maths</div><div class="trv">10,645 kcal/week</div><div class="trd">4 training days × 1,570 + 3 rest days × 1,455 = 10,645. vs TDEE of 14,700 = deficit of ~4,055 kcal/week = ~0.5 kg fat loss/week.</div></div>
+  </div>
+
+  <!-- MACRO BAR - TRAINING DAY -->
   <div class="macro-bar">
-    <div class="macro-bar-label"><span>Macro split (training day)</span><span>1,500 kcal</span></div>
+    <div class="macro-bar-label"><span>Training day macro split</span><span>~1,570 kcal</span></div>
     <div class="macro-bar-track">
-      <div class="mb-p" style="width:37%"></div>
-      <div class="mb-c" style="width:35%"></div>
-      <div class="mb-f" style="width:28%"></div>
+      <div class="mb-p" style="width:31%"></div>
+      <div class="mb-c" style="width:39%"></div>
+      <div class="mb-f" style="width:30%"></div>
     </div>
     <div class="macro-legend">
-      <div class="ml-item"><div class="ml-dot" style="background:#1a6b5a"></div>Protein 140g · 560 kcal · 37%</div>
-      <div class="ml-item"><div class="ml-dot" style="background:#1d56c4"></div>Carbs 130g · 520 kcal · 35%</div>
-      <div class="ml-item"><div class="ml-dot" style="background:#c17f24"></div>Fats 47g · 420 kcal · 28%</div>
+      <div class="ml-item"><div class="ml-dot" style="background:#1a6b5a"></div>Protein ~120g · 480 kcal</div>
+      <div class="ml-item"><div class="ml-dot" style="background:#1d56c4"></div>Carbs ~155g · 620 kcal</div>
+      <div class="ml-item"><div class="ml-dot" style="background:#c17f24"></div>Fats ~52g · 470 kcal</div>
     </div>
   </div>
 
-  <div class="al d"><strong>Non-negotiable:</strong> Hit 140g protein every single day — training day or rest day. This is the most important number in this plan. If you miss your calories, miss them from carbs or fats, not protein.</div>
-  <div class="al ok"><strong>Expected progress:</strong> With consistent adherence — 0.4–0.6 kg fat loss per week. Strength should stay roughly the same for the first 4–6 weeks. If strength drops significantly, tell me — we may need to adjust.</div>
+  <div class="al ok"><strong>Protein is the priority.</strong> Hit 120g every day — training or rest. If you miss calories, miss them from carbs or fats, not protein. Protein is what keeps your muscle intact while the fat comes off.</div>
+  <div class="al d"><strong>Cooking oil is the most common hidden calorie.</strong> Max 2–3 tsp total oil across all meals per day. Use a teaspoon to measure — do not eyeball it.</div>
 </div>
 
 <!-- DIET -->
@@ -187,184 +166,177 @@ body{font-family:var(--sans);color:var(--ink);font-size:15px;line-height:1.7;pad
 <div class="ph"><div class="ph-eye">Nutrition</div><div class="ph-title">Your daily<br>meal plan.</div></div>
 <div class="cx">
 
-  <!-- TRAINING vs REST TOGGLE -->
   <div class="day-toggle-wrap">
-    <button class="day-toggle-btn active" onclick="showDiet('train', this)">Training Day</button>
-    <button class="day-toggle-btn" onclick="showDiet('rest', this)">Rest Day</button>
+    <button class="day-toggle-btn active" onclick="showDiet('train',this)">🏋️ Training Day (~1,570 kcal)</button>
+    <button class="day-toggle-btn" onclick="showDiet('rest',this)">😴 Rest Day (~1,450 kcal)</button>
   </div>
 
   <!-- ── TRAINING DAY ── -->
   <div class="diet-variant active" id="diet-train">
 
-    <div class="al i"><strong>Training day total: 1,500 kcal · P 140g · C 130g · F 47g.</strong> Slightly higher carbs to fuel your session and help with recovery.</div>
-
     <!-- MEAL 1 -->
     <div class="card">
-      <div class="ch acc"><div class="ct">Meal 1 — Breakfast</div><div class="cm">~370 kcal · P 35g · C 30g · F 12g · Time: 7:30–8:30am</div></div>
+      <div class="ch acc"><div class="ct">Meal 1 — Breakfast</div><div class="cm">~320 kcal · P 12g · C 55g · F 7g · 7:30–8:30am</div></div>
       <div class="cb">
-        · 4 whole eggs scrambled in 1 tsp ghee (minimum oil)<br>
-        · 2 medium whole wheat chapatis OR 2 slices whole wheat bread<br>
-        · 1 cup homemade sabzi — minimal oil (bhindi, carrot, beans, cauliflower or spinach)<br>
-        · Black coffee or green tea (no sugar, no milk) — optional
-        <div class="nt ok">Eat within 30–45 mins of waking. Skipping breakfast on a deficit leads to worse food choices later in the day.</div>
+        Oats smoothie — blend together:<br>
+        · 50g oats<br>
+        · 100ml full-fat milk<br>
+        · 1 banana
       </div>
     </div>
 
     <!-- MEAL 2 -->
     <div class="card">
-      <div class="ch"><div class="ct">Meal 2 — Mid-morning snack</div><div class="cm">~150 kcal · P 18g · C 8g · F 5g · Time: 11:00–11:30am</div></div>
+      <div class="ch"><div class="ct">Meal 2 — Mid-day</div><div class="cm">~365 kcal · P 30g · C 18g · F 18g · 12:30–1:00pm</div></div>
       <div class="cb">
-        · 1 cup curd (150g) — plain, no sugar<br>
-        · OR 2 boiled eggs with black salt and pepper<br>
-        · 1 small apple or pear (optional — only if hungry)
-        <div class="nt ok">This keeps hunger in check before lunch. Do not skip this if you train in the evening — it stops you from overeating at dinner.</div>
+        · 3 whole boiled eggs<br>
+        · 3 boiled egg whites<br><br>
+        <strong>Pick one alongside — hydration + volume:</strong>
+        <div class="fruit-row">
+          <span class="fruit-chip">🥒 Whole cucumber + pinch of salt</span>
+          <span class="fruit-chip">🍉 200–250g watermelon</span>
+          <span class="fruit-chip">🍈 150–200g papaya</span>
+          <span class="fruit-chip">🍐 1 whole guava</span>
+        </div>
+        <div class="nt i"><strong>Optional:</strong> 4–5 almonds or 2 walnuts (~50 kcal). Include on days you feel low on energy, skip otherwise.</div>
       </div>
     </div>
 
     <!-- MEAL 3 -->
     <div class="card">
-      <div class="ch"><div class="ct">Meal 3 — Lunch</div><div class="cm">~420 kcal · P 42g · C 45g · F 12g · Time: 1:30–2:00pm</div></div>
+      <div class="ch"><div class="ct">Meal 3 — Lunch</div><div class="cm">~420 kcal · P 36g · C 42g · F 12g · 2:30–3:00pm</div></div>
       <div class="cb">
-        <strong>Choose one protein:</strong><br>
-        · <strong>150g grilled or tandoori chicken</strong> (no gravy — dry preparations are best for fat loss) <span class="bx ok">best choice</span><br>
-        · 180g fish (rohu/katla — boiled or minimal oil curry)<br>
-        · 4 whole eggs (bhurji or boiled)<br><br>
-        + 1 cup white rice OR 2 chapatis (not both at lunch)<br>
-        + 1 cup moong or masoor dal<br>
-        + 1 cup sabzi (same chopped batch — no extra oil)<br>
-        + Skip curd at lunch — save it for snack
-        <div class="nt w">Gravy curries at restaurants use 3–4 tbsp oil per serving — this alone can add 300+ kcal invisibly. Stick to dry, grilled, or minimal-oil preparations when outside.</div>
+        · 120g chicken (grilled or curry)<br>
+        · Rice — have a good portion, this is your main carb window for the day<br>
+        · 1 cup dal<br>
+        · <strong>High volume sabzi — large portion, minimal oil.</strong> Bhindi, cauliflower, cabbage, beans — whatever is available. Do not have a small portion of sabzi. This is what keeps you full until dinner.
+        <div class="nt ok">Lunch is 2 hours before your workout. Digestion will be mostly done by the time you train — good timing.</div>
       </div>
     </div>
 
-    <!-- MEAL 4 PRE WORKOUT -->
+    <!-- PRE WORKOUT -->
     <div class="card">
-      <div class="ch"><div class="ct">Meal 4 — Pre-workout <span class="bx i">30–45 min before gym</span></div><div class="cm">~200 kcal · P 25g · C 20g · F 4g · Time: 5:00–5:30pm</div></div>
+      <div class="ch"><div class="ct">Pre-workout · 5:00–5:30pm</div><div class="cm">No food needed — lunch 2 hours prior is sufficient</div></div>
       <div class="cb">
-        · 1 scoop whey protein in 200ml water<br>
-        · 1 banana OR 1 small bowl poha (light carbs for energy)<br>
-        · Skip peanut butter here — save fats for other meals on a deficit
-        <div class="nt i">Do not train fasted. You need some carbs 30–45 min before lifting to maintain strength and intensity on a deficit.</div>
-      </div>
-    </div>
-
-    <!-- MEAL 5 DINNER -->
-    <div class="card hi">
-      <div class="ch acc"><div class="ct">Meal 5 — Post-workout Dinner <span class="bx d">Biggest protein meal</span></div><div class="cm">~360 kcal · P 40g · C 27g · F 14g · Time: 8:30–9:30pm</div></div>
-      <div class="cb">
-        <strong>Choose one protein (avoid repeating lunch protein):</strong><br>
-        · 200g chicken breast — grilled, baked, or air fried <span class="bx ok">recommended</span><br>
-        · 4–5 eggs (bhurji or curry with minimal oil)<br>
-        · 180g fish (steamed or grilled — not fried)<br><br>
-        + 1 chapati only (no rice at dinner on a deficit)<br>
-        + 1 cup dal OR 1 cup sabzi<br>
-        + 1 small bowl curd (100g)<br><br>
-        <em style="color:var(--ink-soft);font-size:12.5px">Dinner is your post-workout recovery window. Protein here is the most important — do not reduce it even if not very hungry.</em>
-        <div class="nt d">No rice at dinner. The one chapati is enough carbs for overnight recovery. Removing dinner rice alone saves ~130 kcal and helps fat loss without affecting performance.</div>
-      </div>
-    </div>
-  </div>
-
-  <!-- ── REST DAY ── -->
-  <div class="diet-variant" id="diet-rest">
-
-    <div class="al i"><strong>Rest day total: 1,500 kcal · P 140g · C 90g · F 55g.</strong> Carbs are lower since you don't need to fuel a training session. Fats go up slightly to compensate and keep you satiated.</div>
-
-    <!-- MEAL 1 -->
-    <div class="card">
-      <div class="ch acc"><div class="ct">Meal 1 — Breakfast</div><div class="cm">~350 kcal · P 33g · C 22g · F 15g · Time: 8:00–9:00am</div></div>
-      <div class="cb">
-        · 4 whole eggs scrambled in 1 tsp ghee<br>
-        · 1–2 whole wheat chapatis only (reduce from training day)<br>
-        · 1 cup sabzi — minimal oil<br>
-        · Black coffee or green tea — no sugar
-        <div class="nt ok">On rest days, no urgency to eat early. Eating slightly later naturally reduces the hunger window and helps maintain the deficit more easily.</div>
-      </div>
-    </div>
-
-    <!-- MEAL 2 -->
-    <div class="card">
-      <div class="ch"><div class="ct">Meal 2 — Mid-morning</div><div class="cm">~160 kcal · P 12g · C 8g · F 9g · Time: 11:30am–12:00pm</div></div>
-      <div class="cb">
-        · 1 small bowl curd (150g) — plain<br>
-        · Small handful of mixed nuts — 10–12 almonds or walnuts<br>
-        · Skip fruit on rest days — save carb budget for meals
-      </div>
-    </div>
-
-    <!-- MEAL 3 -->
-    <div class="card">
-      <div class="ch"><div class="ct">Meal 3 — Lunch</div><div class="cm">~400 kcal · P 42g · C 35g · F 14g · Time: 1:30–2:30pm</div></div>
-      <div class="cb">
-        <strong>Choose one protein:</strong><br>
-        · 150g grilled chicken <span class="bx ok">best choice</span><br>
-        · 4 whole eggs<br>
-        · 180g fish (minimal oil)<br><br>
-        + 1 cup white rice (smaller portion than training day)<br>
-        + 1 cup dal<br>
-        + 1 cup sabzi
-        <div class="nt w">Rest day lunch is where most of your carbs sit. Keep rice to 1 cup only — not heaped, just level.</div>
+        · 5g creatine monohydrate in water<br>
+        · Pre-workout drink if you take one
       </div>
     </div>
 
     <!-- MEAL 4 -->
     <div class="card">
-      <div class="ch"><div class="ct">Meal 4 — Evening snack</div><div class="cm">~130 kcal · P 13g · C 5g · F 7g · Time: 4:30–5:30pm</div></div>
+      <div class="ch"><div class="ct">Meal 4 — Post-workout whey <span class="bx ok">immediately after</span></div><div class="cm">~160 kcal · P 30g · C 4g · F 2.5g</div></div>
       <div class="cb">
-        · 2 boiled eggs with black salt and pepper<br>
-        · OR 50g paneer cubes with chaat masala<br>
-        · Black coffee or green tea (no sugar)
-        <div class="nt ok">On rest days this replaces the pre-workout snack. Keep it light and protein-focused — no banana or starchy carbs needed.</div>
+        · 1 scoop MuscleTech Nitro-Tech in 200ml water<br>
+        <em style="font-size:12px;color:var(--ink-soft)">Per scoop: 30g protein · 160 kcal · 4g carbs · 2.5g fat</em>
       </div>
     </div>
 
     <!-- MEAL 5 -->
     <div class="card hi">
-      <div class="ch acc"><div class="ct">Meal 5 — Dinner <span class="bx d">High protein, low carb</span></div><div class="cm">~460 kcal · P 40g · C 20g · F 20g · Time: 8:00–9:00pm</div></div>
+      <div class="ch acc"><div class="ct">Meal 5 — Dinner</div><div class="cm">~380 kcal · P 34g · C 24g · F 18g · 8:30–9:30pm</div></div>
       <div class="cb">
-        <strong>Choose one protein:</strong><br>
-        · 200g chicken breast — grilled or baked <span class="bx ok">recommended</span><br>
-        · 5 whole eggs (bhurji with veggies, minimal oil)<br>
-        · 200g fish (grilled or steamed)<br><br>
-        + 1 chapati only (no rice on rest day dinner)<br>
-        + Large bowl of sabzi (bhindi, broccoli, spinach, beans — cook with less oil)<br>
-        + 1 small bowl curd (100g)
-        <div class="nt d">Rest day dinner is higher fat than training day — that's intentional. Healthy fats from eggs, ghee, and curd keep you satisfied through the night without spiking blood sugar.</div>
+        · 150g chicken curry<br>
+        · 2 chapatis<br>
+        · 1 cup sabzi<br>
+        · 1 small bowl curd (100g)
       </div>
     </div>
-  </div>
+
+    <div class="al i"><strong>Training day total: ~1,570 kcal · P ~120g · C ~143g · F ~58g</strong><br>With optional nuts: ~1,620 kcal — still within acceptable range.</div>
+
+  </div><!-- end training day -->
+
+  <!-- ── REST DAY ── -->
+  <div class="diet-variant" id="diet-rest">
+
+    <!-- MEAL 1 -->
+    <div class="card">
+      <div class="ch acc"><div class="ct">Meal 1 — Breakfast</div><div class="cm">~320 kcal · P 12g · C 55g · F 7g · 8:00–9:00am</div></div>
+      <div class="cb">
+        Oats smoothie — blend together:<br>
+        · 50g oats<br>
+        · 100ml full-fat milk<br>
+        · 1 banana
+      </div>
+    </div>
+
+    <!-- MEAL 2 -->
+    <div class="card">
+      <div class="ch"><div class="ct">Meal 2 — Mid-day</div><div class="cm">~315 kcal · P 30g · C 15g · F 18g · 1:00–1:30pm</div></div>
+      <div class="cb">
+        · 3 whole boiled eggs<br>
+        · 3 boiled egg whites<br><br>
+        <strong>Pick one alongside — hydration + volume:</strong>
+        <div class="fruit-row">
+          <span class="fruit-chip">🥒 Whole cucumber + pinch of salt</span>
+          <span class="fruit-chip">🍉 200–250g watermelon</span>
+          <span class="fruit-chip">🍈 150–200g papaya</span>
+          <span class="fruit-chip">🍐 1 whole guava</span>
+        </div>
+        <div class="nt i">No nuts on rest days — skip to keep calories lower.</div>
+      </div>
+    </div>
+
+    <!-- MEAL 3 -->
+    <div class="card">
+      <div class="ch"><div class="ct">Meal 3 — Lunch</div><div class="cm">~370 kcal · P 34g · C 30g · F 12g · 2:30–3:30pm</div></div>
+      <div class="cb">
+        · 120g chicken (grilled or curry)<br>
+        · Rice — slightly less than training day since you are not training today<br>
+        · 1 cup dal<br>
+        · <strong>High volume sabzi — large portion, minimal oil.</strong> Same rule as training day — do not skip or reduce the sabzi.
+      </div>
+    </div>
+
+    <!-- CREATINE -->
+    <div class="card">
+      <div class="ch"><div class="ct">5:00–5:30pm</div><div class="cm">No pre-workout drink on rest days</div></div>
+      <div class="cb">
+        · 5g creatine monohydrate in water<br>
+        <em style="font-size:12px;color:var(--ink-soft)">Take creatine every single day — training or rest — for it to work.</em>
+      </div>
+    </div>
+
+    <!-- MEAL 4 -->
+    <div class="card">
+      <div class="ch"><div class="ct">Meal 4 — Evening protein</div><div class="cm">~160 kcal · P 30g · C 4g · F 2.5g · 5:30–6:00pm</div></div>
+      <div class="cb">
+        · 1 scoop MuscleTech Nitro-Tech in 200ml water<br>
+        <em style="font-size:12px;color:var(--ink-soft)">Same slot as post-workout on training days — keeps protein timing consistent.</em>
+      </div>
+    </div>
+
+    <!-- MEAL 5 -->
+    <div class="card hi">
+      <div class="ch acc"><div class="ct">Meal 5 — Dinner</div><div class="cm">~290 kcal · P 32g · C 12g · F 16g · 8:30–9:00pm</div></div>
+      <div class="cb">
+        · 150g chicken curry<br>
+        · 1 chapati (reduced from 2 on training days)<br>
+        · 1 cup sabzi<br>
+        · 1 small bowl curd (100g)
+      </div>
+    </div>
+
+    <div class="al i"><strong>Rest day total: ~1,455 kcal · P ~120g · C ~116g · F ~56g</strong></div>
+
+  </div><!-- end rest day -->
 
   <div class="div"></div>
 
-  <!-- FOOD NOTES -->
-  <div class="slbl">Food notes</div>
+  <!-- PROTEIN SUMMARY -->
+  <div class="slbl" style="font-size:10px;letter-spacing:0.18em;text-transform:uppercase;color:var(--accent);margin-bottom:7px">Protein breakdown</div>
   <div class="card">
-    <div class="ch"><div class="ct" style="color:var(--teal)">Eat freely (low cal, high volume)</div></div>
-    <div class="cb">All vegetables (raw or cooked with minimal oil) · Cucumber · Tomato · Lettuce · Mushrooms · Black coffee · Green tea · Lemon water · Buttermilk (chaas, no salt added)</div>
-  </div>
-  <div class="card">
-    <div class="ch"><div class="ct" style="color:var(--teal)">Good protein sources</div></div>
-    <div class="cb">Chicken breast (grilled/baked) · Eggs · Fish (rohu/katla/pomfret) · Curd · Dal · Paneer (limited — high fat) · Whey protein</div>
-  </div>
-  <div class="card">
-    <div class="ch"><div class="ct" style="color:var(--accent)">Avoid completely</div></div>
-    <div class="cb">Fruit juices and soft drinks · Biscuits and namkeen · Restaurant gravy curries · Biryani and fried rice · Bread (white/maida) · Sweets and mithai · Alcohol · Packaged "diet" snacks (usually high sugar)</div>
+    <div class="tr"><div class="trm">Oats smoothie (milk)</div><div class="trv">~4g</div><div class="trd"></div></div>
+    <div class="tr"><div class="trm">3 whole eggs + 3 whites</div><div class="trv">~24g</div><div class="trd"></div></div>
+    <div class="tr"><div class="trm">Chicken at lunch (120g)</div><div class="trv">~32g</div><div class="trd"></div></div>
+    <div class="tr"><div class="trm">MuscleTech Nitro-Tech (1 scoop)</div><div class="trv">~30g</div><div class="trd"></div></div>
+    <div class="tr"><div class="trm">Chicken at dinner (150g)</div><div class="trv">~28g</div><div class="trd"></div></div>
+    <div class="tr"><div class="trm">Curd (100g)</div><div class="trv">~4g</div><div class="trd"></div></div>
+    <div class="tr" style="background:var(--teal-soft)"><div class="trm" style="color:var(--teal)">Daily total</div><div class="trv" style="color:var(--teal)">~122g ✓</div><div class="trd" style="color:#0d3d30">Target: 120g — on track both days.</div></div>
   </div>
 
-  <div class="al w"><strong>Cooking oil rule:</strong> Maximum 2–3 tsp total oil per day across all meals. Use a teaspoon to measure — do not eyeball it. Most fat loss diets fail because of invisible cooking oil calories.</div>
-
-  <div class="div"></div>
-
-  <!-- SNACKS -->
-  <div class="slbl">If hunger hits between meals</div>
-  <div class="stit">5 safe options<br>under 150 kcal.</div>
-  <div class="snk"><div class="snkn">1. Boiled eggs (2)</div><div class="snkb">With black salt and chaat masala. Quickest option. Prep in advance and keep in fridge.</div><div class="snkm">~140 kcal · P 12g · Zero carbs · Very filling</div></div>
-  <div class="snk"><div class="snkn">2. Plain curd (200g)</div><div class="snkb">No sugar, no fruit. Add a pinch of roasted jeera and black salt. Cool and filling.</div><div class="snkm">~120 kcal · P 8g · Probiotic · Low GI</div></div>
-  <div class="snk"><div class="snkn">3. Roasted makhana (1 bowl)</div><div class="snkb">Dry roast with salt and pepper. Crunchy and satisfying. Better than any packaged snack.</div><div class="snkm">~100 kcal · Low fat · Low GI</div></div>
-  <div class="snk"><div class="snkn">4. Cucumber + tomato salad</div><div class="snkb">Sliced cucumber, tomato, onion with lemon juice, black salt, and chaat masala. Unlimited quantity — almost zero calories.</div><div class="snkm">~30 kcal · High volume · Kills hunger fast</div></div>
-  <div class="snk"><div class="snkn">5. Black coffee or green tea</div><div class="snkb">No sugar, no milk. Suppresses appetite and boosts fat burning slightly. Limit to 2–3 cups per day total.</div><div class="snkm">~5 kcal · Zero fat · Natural appetite suppressant</div></div>
-  <div class="al ok"><strong>Hunger management rule:</strong> On a 600 kcal deficit, some hunger is normal and expected — especially in the first 2 weeks. Drink water first (hunger is often thirst). If still hungry after 15 mins, eat from the snack list above.</div>
-</div>
+</div><!-- end cx -->
 
 <div class="foot">
   <div class="footn">Surabhi</div>
@@ -381,30 +353,25 @@ body{font-family:var(--sans);color:var(--ink);font-size:15px;line-height:1.7;pad
 </nav>
 
 <script>
-function showDiet(type, btn) {
-  document.querySelectorAll('.diet-variant').forEach(d => d.classList.remove('active'));
-  document.querySelectorAll('.day-toggle-btn').forEach(b => b.classList.remove('active'));
-  document.getElementById('diet-' + type).classList.add('active');
+function showDiet(type,btn){
+  document.querySelectorAll('.diet-variant').forEach(d=>d.classList.remove('active'));
+  document.querySelectorAll('.day-toggle-btn').forEach(b=>b.classList.remove('active'));
+  document.getElementById('diet-'+type).classList.add('active');
   btn.classList.add('active');
 }
-function hl(el) {
-  document.querySelectorAll('.bnav a').forEach(a => a.style.color = '');
-  el.style.color = '#fff';
-  setTimeout(() => { el.style.color = ''; }, 800);
+function hl(el){
+  document.querySelectorAll('.bnav a').forEach(a=>a.style.color='');
+  el.style.color='#fff';
+  setTimeout(()=>{el.style.color=''},800);
 }
-const anchors = ['overview','diet'];
-const navLinks = document.querySelectorAll('.bnav a');
-function updateNav() {
-  let c = anchors[0];
-  anchors.forEach(id => {
-    const el = document.getElementById(id);
-    if (el && window.scrollY >= el.offsetTop - 80) c = id;
-  });
-  navLinks.forEach(a => {
-    a.style.color = a.getAttribute('href') === '#' + c ? '#ffffff' : '';
-  });
+const anchors=['overview','diet'];
+const navLinks=document.querySelectorAll('.bnav a');
+function updateNav(){
+  let c=anchors[0];
+  anchors.forEach(id=>{const el=document.getElementById(id);if(el&&window.scrollY>=el.offsetTop-80)c=id});
+  navLinks.forEach(a=>{a.style.color=a.getAttribute('href')==='#'+c?'#ffffff':''});
 }
-window.addEventListener('scroll', updateNav, { passive: true });
+window.addEventListener('scroll',updateNav,{passive:true});
 updateNav();
 </script>
 </body>
